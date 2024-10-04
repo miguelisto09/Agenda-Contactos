@@ -7,13 +7,17 @@
         mc:Ignorable="d"
         Title="Contacto" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" Text="Tipo de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,77,0,0" VerticalAlignment="Top" Width="120">
+        <Label HorizontalAlignment="Center" Margin="0,172,0,0"  Content="Tipo de contacto" VerticalAlignment="Top" Width="120" />
+        <ComboBox HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Amigo"/>
             <ComboBoxItem Content="Familiar"/>
             <ComboBoxItem Content="Pareja"/>
             <ComboBoxItem Content="Otro"/>
         </ComboBox>
+        <TextBox Name="Nombre" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" Text="Nombre de contacto" VerticalAlignment="Top" Width="120" />
+        <TextBox HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" Text="Apellido de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,232,0,0" TextWrapping="Wrap" Text="Número de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,266,0,0" TextWrapping="Wrap" Text="Número de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
 
     </Grid>
 </Window>

@@ -19,9 +19,18 @@ namespace Agenda_Contactos
         public MainWindow()
         {
             InitializeComponent();
+            Nombre.TextChanged += TextBox_TextChanged;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+      {
+            e.Handled = true;
+           string hola = Nombre.Text ?? string.Empty;
+
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
