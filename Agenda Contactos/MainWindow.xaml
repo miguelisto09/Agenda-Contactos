@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Agenda_Contactos"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Contacto" Height="450" Width="800">
     <Grid>
+        <TextBox HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" Text="Tipo de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <ComboBox HorizontalAlignment="Center" Margin="0,77,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Amigo"/>
+            <ComboBoxItem Content="Familiar"/>
+            <ComboBoxItem Content="Pareja"/>
+            <ComboBoxItem Content="Otro"/>
+        </ComboBox>
 
     </Grid>
 </Window>

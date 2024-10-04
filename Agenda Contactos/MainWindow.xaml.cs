@@ -20,5 +20,10 @@ namespace Agenda_Contactos
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
