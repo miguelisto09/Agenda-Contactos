@@ -6,18 +6,20 @@
         xmlns:local="clr-namespace:Agenda_Contactos"
         mc:Ignorable="d"
         Title="Contacto" Height="450" Width="800">
-    <Grid>
-        <Label HorizontalAlignment="Center" Margin="0,172,0,0"  Content="Tipo de contacto" VerticalAlignment="Top" Width="120" />
-        <ComboBox HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Amigo"/>
-            <ComboBoxItem Content="Familiar"/>
-            <ComboBoxItem Content="Pareja"/>
-            <ComboBoxItem Content="Otro"/>
-        </ComboBox>
-        <TextBox Name="Nombre" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" Text="Nombre de contacto" VerticalAlignment="Top" Width="120" />
-        <TextBox HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" Text="Apellido de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,232,0,0" TextWrapping="Wrap" Text="Número de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,266,0,0" TextWrapping="Wrap" Text="Número de contacto" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="28,0,-35,-16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="363*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Contacto" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="152" Foreground="#FF0602FF" FontFamily="Franklin Gothic Medium Cond" FontSize="36"/>
+        <TextBox x:Name="Nombre" HorizontalAlignment="Left" Margin="356,41,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Nombre_TextChanged"/>
+        <Label Content="Nombre " HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content=" Apellido" HorizontalAlignment="Center" Margin="0,64,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="388,123,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content=" Tipo de contacto" HorizontalAlignment="Left" Margin="356,185,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="356,93,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.438,-1.307" TextChanged="TextBox_TextChanged_2"/>
+        <TextBox HorizontalAlignment="Left" Margin="356,159,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="356,220,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

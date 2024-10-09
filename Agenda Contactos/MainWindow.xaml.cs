@@ -34,5 +34,15 @@ namespace Agenda_Contactos
         {
 
         }
+
+        private void Nombre_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
